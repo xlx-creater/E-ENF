@@ -24,7 +24,7 @@ Download the datasets from [EV-ENFD](https://whueducn-my.sharepoint.com/:f:/g/pe
 
 ## Estimate Electric Network Frequency using E-ENF
 
-<img src='https://github.com/xlx-creater/E-ENF/blob/main/GUI.png />
+<img src='https://github.com/xlx-creater/E-ENF/blob/main/GUI.png' />
 
 ## Training and Testing
 
