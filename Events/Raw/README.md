@@ -1,1 +1,1 @@
-This source code was borrowed from website: https://jonbarron.info/. 
+Place the '.aedat4' raw event files from EV-ENFD in this folder.
