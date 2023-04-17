@@ -21,18 +21,10 @@ Download the datasets from [EV-ENFD](https://whueducn-my.sharepoint.com/:f:/g/pe
 3. Replace 'Events/ENF_Reference' with the 'ENF_Reference' folder in EV-ENFD, where each '.wav' file contains grid voltage changes recorded by the transformer within an hour.
 
 
-Untar the downloaded archive into `data/` sub-folder in the code directory.
 
-See NeRF++ sections on [data](https://github.com/Kai-46/nerfplusplus#data) and [COLMAP](https://github.com/Kai-46/nerfplusplus#generate-camera-parameters-intrinsics-and-poses-with-colmap-sfm) on how to create adapt a new dataset for training. 
+## Estimate Electric Network Frequency using E-ENF
 
-Please contact us if you need to adapt your own event stream as it might need updates to the code.
-
-## Create environment
-
-```
-conda env create --file environment.yml
-conda activate eventnerf
-```
+<img src='https://github.com/xlx-creater/E-ENF/blob/main/GUI.png />
 
 ## Training and Testing
 
