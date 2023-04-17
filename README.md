@@ -67,9 +67,9 @@ Please find the guide on evaluation, color-correction, and computing the metrics
 Please cite our work if you use the code.
 
 ```
-@InProceedings{rudnev2023eventnerf,
-      title={EventNeRF: Neural Radiance Fields from a Single Colour Event Camera},
-      author={Viktor Rudnev and Mohamed Elgharib and Christian Theobalt and Vladislav Golyanik},
+@InProceedings{Xu2023seeing,
+      title={“Seeing” Electric Network Frequency from Events},
+      author={Lexuan, Xu and Guang, Hua and Haijian, Zhhang and Lei, Yu and Ning, Qiao},
       booktitle={Computer Vision and Pattern Recognition (CVPR)},
       year={2023}
 }
