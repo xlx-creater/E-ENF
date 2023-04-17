@@ -26,6 +26,10 @@ Download the datasets from [EV-ENFD](https://whueducn-my.sharepoint.com/:f:/g/pe
 
 <img src='https://github.com/xlx-creater/E-ENF/blob/main/GUI.png' />
 
+1. Run 'E_ENF/E_ENF(GUI)/ENF_match_GUI.py' to get the GUI interface shown above.
+2. 
+
+
 
 
 ## Citation
