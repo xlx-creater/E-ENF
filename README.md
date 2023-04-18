@@ -17,7 +17,7 @@ Download the datasets from [EV-ENFD](https://whueducn-my.sharepoint.com/:f:/g/pe
 
 
 1. Place one or several raw event files in the '.aedat4' format under the three scenarios in EV-ENFD into the 'Events/Raw/'.
-2. Run 'Event_Process/aedat4_unpack_without_flir.py' to unpack '.aedat4' files in 'Raw', and the result will be saved in 'Events/Unpacked/dvSave-***'.
+2. Run 'Event_Process/aedat4_unpack_without_flir.py' to unpack '.aedat4' files in 'Raw', and the result will be saved in 'Events/Unpacked/dvSave-'.
 3. Replace 'Events/ENF_Reference' with the 'ENF_Reference' folder in EV-ENFD, where each '.wav' file contains grid voltage changes recorded by the transformer within an hour.
 
 
@@ -27,9 +27,10 @@ Download the datasets from [EV-ENFD](https://whueducn-my.sharepoint.com/:f:/g/pe
 <img src='https://github.com/xlx-creater/E-ENF/blob/main/GUI.png' />
 
 1. Run 'E_ENF/E_ENF(GUI)/ENF_match_GUI.py' to get the GUI interface shown above.
-2. 
-
-
+2. Click the 'Browser' button next to 'Open File' and select the event stream 'Events/Unpacked/dvSave-/events' you want to extract.
+3. The 'Browser' button next to 'Reference Floder' select the 'Events/ENF_Reference' folder to get the real ground truth reference.
+4. Under 'Possible begin and end time of recording' fill in the reference signal time range of the search, and click 'Generate Task' to check the selected range.
+5. Click the 'Start Processing' button, the program will estimate the ENF signal from the event stream, and match the reference signal closest to the estimated result within the selected reference time range, and the result will be displayed in the lower right corner of the GUI.
 
 
 ## Citation
