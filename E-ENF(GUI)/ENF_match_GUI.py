@@ -83,9 +83,6 @@ def start_program_button():
     Use_data = event_files_sampling(file_path, ConstFs)
 
 
-    np.save("Data/Save_data.npy", Use_data)
-
-
     # #####
     # k = 4
     # StepPoints = 10
