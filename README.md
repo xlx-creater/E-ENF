@@ -21,6 +21,27 @@ Download the datasets from [EV-ENFD](https://whueducn-my.sharepoint.com/:f:/g/pe
 3. Replace 'Events/ENF_Reference' with the 'ENF_Reference' folder in EV-ENFD, where each '.wav' file contains grid voltage changes recorded by the transformer within an hour.
 
 
+After performing the aforementioned operations, the contents of the 'Events' folder are as follows:
+```
+<project root>
+  |-- Events
+  |     |-- Raw
+  |     |     |-- dvSave-2022_08_17_20_10_23.aedat4
+  |     |     |-- dvSave-2022_08_17_20_24_41.aedat4
+  |     |     |-- ...
+  |     |-- Unpacked
+  |     |     |-- dvSave-2022_08_17_20_10_23
+  |     |     |    |-- events
+  |     |     |    |-- event2ts
+  |     |     |-- dvSave-2022_08_17_20_24_41
+  |     |     |    |-- events
+  |     |     |    |-- event2ts
+  |     |     |-- ...     
+  |     |-- ENF_Reference
+  |     |     |-- 2022_08_17_Wed_17_00_00.wav
+  |     |     |-- 2022_08_17_Wed_18_00_00.wav
+```
+
 
 ## Estimate Electric Network Frequency using E-ENF
 
