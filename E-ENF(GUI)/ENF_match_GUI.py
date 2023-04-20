@@ -114,15 +114,15 @@ def start_program_button():
     storeFileStrings     = date_wav_filename(ENF_Year, ENF_Month, ENF_date_Begin, ENF_date_End, ENF_Hour_Begin, ENF_Hour_End)
     len_of_File          = int(len(storeFileStrings)/23)
 
-    StartMin         = [None]*len_of_File
-    StartSec         = [None]*len_of_File
-    EndMin           = [None]*len_of_File
-    EndSec           = [None]*len_of_File
-    MaxScore         = [None]*len_of_File
+    StartMin         = [0.0]*len_of_File
+    StartSec         = [0.0]*len_of_File
+    EndMin           = [0.0]*len_of_File
+    EndSec           = [0.0]*len_of_File
+    MaxScore         = [0.0]*len_of_File
 
-    CalibratedIF   = [[None]*len(IFtest) for i in range(len_of_File)]
-    StartTimeIndex = [None]*len_of_File
-    EndTimeIndex   = [None]*len_of_File
+    CalibratedIF   = [[0.0]*len(IFtest) for i in range(len_of_File)]
+    StartTimeIndex = [0.0]*len_of_File
+    EndTimeIndex   = [0.0]*len_of_File
 
     count_wav_not_exist = 0
 
