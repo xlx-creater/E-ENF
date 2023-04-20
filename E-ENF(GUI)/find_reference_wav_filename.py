@@ -76,8 +76,12 @@ def date_wav_filename(ENF_Year, ENF_Month, ENF_date_Begin, ENF_date_End, ENF_Hou
         FileStringC = ''
         if ENF_date_Begin_int < 10:
             ENF_date_str_B = '0' + str(ENF_date_Begin_int)
+        else:
+            ENF_date_str_B = str(ENF_date_Begin_int)
         if ENF_date_End_int < 10:
             ENF_date_str_E = '0' + str(ENF_date_End_int)
+        else:
+            ENF_date_str_E = str(ENF_date_End_int)
 
         # first day
         for ii in range(1, 24 - ENF_Hour_Begin_int):
