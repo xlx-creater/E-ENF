@@ -14,7 +14,6 @@ from AccurateSTFT import AccurateSTFT
 from PCC import PCC
 from scipy.stats import pearsonr
 from DV_data import event_files_sampling
-from Har_Detection import harmonic_detection
 # #####################################################
 # ################ Generate task
 def show_task_time():
@@ -83,24 +82,11 @@ def start_program_button():
     Use_data = event_files_sampling(file_path, ConstFs)
 
 
-    # #####
-    # k = 4
-    # StepPoints = 10
-    # IFtest1 = harmonic_select(Use_data, StepPoints, k, AWindowLength, AStepSize, ConstFs, NFFT)
-
-    #####
-    k = 4
-    TH = 0.015
-    Freq_bounds = 0.2
-    IFtest1 = harmonic_detection(Use_data, k, AWindowLength, AStepSize, ConstFs, NFFT, TH, Freq_bounds)
+    ##### 100Hz
+    b, a = signal.butter(4, [(98 * 2 / ConstFs), (102 * 2 / ConstFs)], 'bandpass')   #6
+    data_after_fir = signal.filtfilt(b, a, Use_data)
+    IFtest1 = np.array(AccurateSTFT(data_after_fir, AWindowLength, AStepSize, ConstFs, NFFT))
     IFtest1 = np.array(TDMF(IFtest1, 21, 0.02))
-
-
-    # ##### 100Hz
-    # b, a = signal.butter(4, [(98 * 2 / ConstFs), (102 * 2 / ConstFs)], 'bandpass')   #6
-    # data_after_fir = signal.filtfilt(b, a, Use_data)
-    # IFtest1 = np.array(AccurateSTFT(data_after_fir, AWindowLength, AStepSize, ConstFs, NFFT))
-    # IFtest1 = np.array(TDMF(IFtest1, 21, 0.02))
 
 
     IFtest = IFtest1 / 2
