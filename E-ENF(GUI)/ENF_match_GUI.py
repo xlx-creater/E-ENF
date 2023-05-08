@@ -49,17 +49,6 @@ def Select_reference_path():
     path.set(folernames)
 
 
-def select_max_region(mask):
-    nums, labels, stats, centroids = cv2.connectedComponentsWithStats(mask, connectivity=8)
-    background = 0
-    for row in range(stats.shape[0]):
-        if stats[row, :][0] == 0 and stats[row, :][1] == 0:
-            background = row
-    stats_no_bg = np.delete(stats, background, axis=0)
-    max_idx = stats_no_bg[:, 4].argmax()
-    max_region = np.where(labels==max_idx+1, 1, 0)
-
-    return max_region
 # ###########################################start program button############################
 
 def start_program_button():
