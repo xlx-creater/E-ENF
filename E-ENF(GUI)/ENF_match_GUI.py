@@ -97,13 +97,13 @@ def start_program_button():
     ax.set_ylim(49.95, 50.05)
     ax.set(title=titlename, ylabel='Frequency (Hz)', xlabel='Time (s)')
     fig.savefig(FILENAME + '.eps',dpi=80,format='eps',bbox_inches = 'tight')
-    draw_set.get_tk_widget().place(x=160, y=100, height=420, width=480)
+    draw_set.get_tk_widget().place(x=100, y=100, height=420, width=480)
 
 
 # ####################################################  window
 window = tk.Tk()
 window.title('Event-based ENF (E-ENF)')
-window.geometry('800x550')
+window.geometry('680x550')
 
 # ##################################################### GUI
 
@@ -112,22 +112,21 @@ window.geometry('800x550')
 pixelVirtual = tk.PhotoImage(width=1, height=1)
 
 #
-btn = tk.Button(window, text="Unpacked Events :", image=pixelVirtual, height = 25, width = 150, compound="c", command=Select_file)
-btn.place(x=25, y=20)
+btn = tk.Button(window, text="Unpacked Events :", image=pixelVirtual, height = 20, width = 140, compound="c", command=Select_file)
+btn.place(x=15, y=20)
 file = tk.StringVar()
 folder = tk.Entry(window, textvariable=file)
-folder.place(x=195, y=25, width=500)
+folder.place(x=170, y=23, width=420)
 
 
-btn2 = tk.Button(window, text="ENF_Reference Folder :", image=pixelVirtual, height = 25, width = 150, compound="c", command=Select_reference_path)
-btn2.place(x=25, y=55)
+btn2 = tk.Button(window, text="ENF_Reference Folder :", image=pixelVirtual, height = 20, width = 140, compound="c", command=Select_reference_path)
+btn2.place(x=15, y=55)
 path = tk.StringVar()
 folder = tk.Entry(window, textvariable=path)
-folder.place(x=195, y=60, width=500)
+folder.place(x=170, y=58, width=420)
 
 
 # Program run button
 start_pro = tk.Button(window, text="Start", image=pixelVirtual, height = 50, width = 50, compound="c", command=start_program_button)
-start_pro.place(x=720, y=25)
+start_pro.place(x=600, y=22)
 window.mainloop()
-
