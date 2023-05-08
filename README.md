@@ -48,10 +48,9 @@ After performing the aforementioned operations, the contents of the 'Events' fol
 <img src='https://github.com/xlx-creater/E-ENF/blob/main/GUI.png' />
 
 1. Run 'E_ENF/E_ENF(GUI)/ENF_match_GUI.py' to get the GUI interface shown above.
-2. Click the 'Browser' button next to 'Open File' and select the event stream 'Events/Unpacked/dvSave-/events' you want to extract.
-3. The 'Browser' button next to 'Reference Floder' select the 'Events/ENF_Reference' folder to get the real ground truth reference.
-4. Under 'Possible begin and end time of recording' fill in the reference signal time range of the search, and click 'Generate Task' to check the selected range.
-5. Click the 'Start Processing' button, the program will estimate the ENF signal from the event stream, and match the reference signal closest to the estimated result within the selected reference time range, and the result will be displayed in the lower right corner of the GUI.
+2. Click the 'Unpacked Events' button and select the event stream 'Events/Unpacked/dvSave-/events' (e.g., 'dvSave-2022_08_17_20_10_23/events') you want to extract.
+3. Click the 'ENF_Reference Folder' button and select the 'Events/ENF_Reference' folder to get the real ground truth reference.
+4. Click the 'Start' button, then the program will estimate the ENF signal from the selected event stream, and the result will be displayed in the middle of the GUI.
 
 
 ## Citation
