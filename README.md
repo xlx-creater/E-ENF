@@ -47,10 +47,11 @@ After performing the aforementioned operations, the contents of the 'Events' fol
 
 <img src='https://github.com/xlx-creater/E-ENF/blob/main/GUI.png' />
 
-1. Run 'E_ENF/E_ENF(GUI)/ENF_match_GUI.py' to get the GUI interface shown above.
-2. Click the 'Unpacked Events' button and select the event stream 'Events/Unpacked/dvSave-/events' (e.g., 'dvSave-2022_08_17_20_10_23/events') you want to extract.
-3. Click the 'ENF_Reference Folder' button and select the 'Events/ENF_Reference' folder to get the real ground truth reference.
-4. Click the 'Start' button, then the program will estimate the ENF signal from the selected event stream, and the result will be displayed in the middle of the GUI.
+To use the GUI interface shown above, run 'E_ENF/E_ENF(GUI)/ENF_match_GUI.py' and follow these steps:
+
+1. Click on the 'Unpacked Events' button and select the desired event stream from the 'Events/Unpacked/dvSave-/events' folder (e.g., 'dvSave-2022_08_17_20_10_23/events') for extraction.
+2. Select the real ground truth reference by clicking on the 'ENF_Reference Folder' button and choosing the 'Events/ENF_Reference' folder.
+3. Press the 'Start' button to initiate the estimation of the ENF signal from the selected event stream. The estimated result will be displayed in the middle of the GUI.
 
 
 ## Citation
