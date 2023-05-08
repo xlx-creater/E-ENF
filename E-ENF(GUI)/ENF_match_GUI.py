@@ -5,6 +5,7 @@ import soundfile as sf
 import os
 import time
 import numpy as np
+from scipy import signal
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
