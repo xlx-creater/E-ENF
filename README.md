@@ -61,7 +61,7 @@ Please cite our work if you use the code.
 ```
 @InProceedings{Xu2023seeing,
       title={“Seeing” Electric Network Frequency from Events},
-      author={Lexuan, Xu and Guang, Hua and Haijian, Zhhang and Lei, Yu and Ning, Qiao},
+      author={Lexuan, Xu and Guang, Hua and Haijian, Zhang and Lei, Yu and Ning, Qiao},
       booktitle={Computer Vision and Pattern Recognition (CVPR)},
       year={2023}
 }
