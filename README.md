@@ -59,10 +59,11 @@ To use the GUI interface shown above, run 'E_ENF/E_ENF(GUI)/ENF_match_GUI.py' an
 Please cite our work if you use the code.
 
 ```
-@InProceedings{Xu2023seeing,
-      title={“Seeing” Electric Network Frequency from Events},
-      author={Lexuan, Xu and Guang, Hua and Haijian, Zhang and Lei, Yu and Ning, Qiao},
-      booktitle={Computer Vision and Pattern Recognition (CVPR)},
-      year={2023}
+@inproceedings{xu2023seeing,
+  title={"Seeing" Electric Network Frequency From Events},
+  author={Xu, Lexuan and Hua, Guang and Zhang, Haijian and Yu, Lei and Qiao, Ning},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={18022--18031},
+  year={2023}
 }
 ```
