@@ -17,7 +17,7 @@ Download the datasets from [EV-ENFD](https://whueducn-my.sharepoint.com/:f:/g/pe
 
 
 1. Place one or several raw event files in the '.aedat4' format under the three scenarios in EV-ENFD into the 'Events/Raw/'.
-2. Run 'Event_Process/aedat4_unpack_without_flir.py' to unpack '.aedat4' files in 'Raw', and the result will be saved in 'Events/Unpacked/dvSave-'.
+2. Run 'Event_Process/aedat4_unpack_without_flir.py' to unpack '.aedat4' files in 'Raw', and the result will be saved in 'Events/Unpacked/dvSave-'(containing two folders: 'events' for unpacked events and 'event2ts' for frame-compressed event stream in time surface mode).
 3. Replace 'Events/ENF_Reference' with the 'ENF_Reference' folder in EV-ENFD, where each '.wav' file contains grid voltage changes recorded by the transformer within an hour.
 
 
