@@ -131,8 +131,8 @@ def event_files_sampling(source_path, fps):
     path_list.sort(key=lambda x: int(x[6:-4]))
     j = 0
     for i in path_list:
-        fliename = path + '/' + i
-        events_loader = Event_txt_loader(fliename)
+        filename = path + '/' + i
+        events_loader = Event_txt_loader(filename)
         if j == 0:
             current_time = events_loader.begin_time  #####  select first current_time
             j = 1
