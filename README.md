@@ -13,7 +13,7 @@
 
 ## Prepare Data
 
-Download the datasets from [EV-ENFD](https://whueducn-my.sharepoint.com/:f:/g/personal/2018302120267_whu_edu_cn/En7DQ7Sg-KhIjeHlphDd1sIBA7alS2xg6UqKfbWf0E-3Zg?e=9aDKcG).
+Download the datasets from [EV-ENFD](https://www.terabox.com/chinese/sharing/link?surl=1KRFN6s2Pc-t86j0lmQzIw).
 
 
 1. Place one or several raw event files in the '.aedat4' format under the three scenarios in EV-ENFD into the 'Events/Raw/'.
